@@ -1,0 +1,6 @@
+print()
+print('"Stwórz zmienną przechowującą wyraz o długości nieparzystej większej niż 7 i zwróć łańcuch złożony z trzech środkowych znaków danego ciągu"')
+print()
+word = input('Podaj słowo o długości nieparzystej większej niż 7: ')
+ref = int(len(word)/2)
+print('Trzy środkowe znaki to: ', word[ref-1],word[ref],word[ref+1])
