@@ -14,7 +14,7 @@ print()
 # Zmodyfikuj skrypt tak, by przyjmował wartości od użytkownika.
 
 fuel_consumption = float(input('Podaj zużycie paliwa na 100km [l]: '))
-unit_price = float(input('Podaj cenę 1 l paliwa [zł]: '))
+unit_price = float(input('Podaj cenę 1l paliwa [zł]: '))
 distance = float(input('Podaj dystans [km]: '))
 total_cost = distance/100 * unit_price * fuel_consumption
 print(f'Koszt wyprawy wynosi: {round(total_cost,2)} zł')
