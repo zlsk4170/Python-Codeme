@@ -2,11 +2,10 @@
 # Program pokazuje ile liter ma hasło i te litery, które zostały już odgadnięte
 # Użytkownik podaje po jednej literze. Użytkownik ma ograniczoną ilość prób.
 # W każdym momencie, zamiast podania litery użytkownik może spróbować odgadnąć całe hasło.
-# Popraw kod wisielca, tak by pobierać hasła do gry z pliku hangman.json. Plik powinnien zawierać conamniej jedno zagnieżdżenie odpowiadające kategoriom, które użytkownik może wybrać w grze. Kategorie pobrane z pliku JSON pojawiają się jako elementy menu start.
 
 import random
 
-words = ['train']
+words = ['train','probability','essential','street','python','eventually']
 random_word = random.choice(words)
 letter_list = list(random_word)
 hidden_list = letter_list
