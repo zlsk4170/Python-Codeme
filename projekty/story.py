@@ -6,14 +6,15 @@ import random
 
 
 def name():
-    start = ['ta', 'sa', 'wu', 'pe', 'ga', 're', 'by', 'ko']
-    end = ['red', 'ron', 'muk', 'fer', 'muld', 'rados', 'manos']
-    call = ['mocny', 'stary', 'brodaty', 'silny']
-    title = ['I', 'II', 'III', 'IV', 'V']
+    vowels = ['a','e','i','u','y','o']
+    consonant = ['t','s','w','p','g','r','b','k']
+    random_start = random.choice(consonant)+random.choice(vowels)
+    random_end = random.choice(consonant) + random.choice(vowels) + random.choice(consonant)
+
+    call = ['mocny', 'stary', 'brodaty', 'silny','kwrawy','podły','niski','szybki']
+    title = ['I', 'II', 'III', 'IV', 'V','VI','VII']
     space = [' ']
 
-    random_start = random.choice(start)
-    random_end = random.choice(end)
     random_call = random.choice(call)
     random_title = random.choice(title)
 
@@ -22,22 +23,22 @@ def name():
     call = random_call.capitalize()
     space = space[0]
     person = name + space + random_title + space + call
-    return name
+    return person
 
 
 def activity():
-    activity = ['read', 'find', 'search for', 'ask for']
+    activity = ['give', 'find', 'search for', 'ask for']
     activity = random.choice(activity)
     return activity
 
 
 def place():
-    place = ['the castle', 'the church', 'the store', 'the palace', 'the village']
+    place = ['the castle', 'the church', 'the store', 'the palace', 'the village', 'the cave', 'the shed']
     place = random.choice(place)
     return place
 
 def things():
-    things = ['instructions','help']
+    things = ['instructions','help','swords','fighters']
     things = random.choice(things)
     return things
 
@@ -48,7 +49,10 @@ def generate_story():
     scenario4 = [name(),'was waiting for',name() ]
     scenario5 = [place().capitalize(),'was destroyed by', name()]
     scenario6 = ['After long fight',name(),'was killed by',name()]
-    story = [scenario1,scenario2,scenario3,scenario4,scenario5,scenario6]
+    scenario7 = ['When', name(), 'tried to', activity(), 'he was spotted by',name()]
+    scenario8 = [name(), 'plans to rebuild', things()]
+
+    story = [scenario1,scenario2,scenario3,scenario4,scenario5,scenario6,scenario7,scenario8]
     story = random.choice(story)
     str_story=' '
     str_story = str_story.join(story)
