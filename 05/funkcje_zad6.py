@@ -36,7 +36,6 @@ def computer():
 
 
 def check_draw(user_value, comp_value):
-
     if user_value == comp_value:
         print('Remis')
         return 1
@@ -73,7 +72,7 @@ def run_game():
         if check_wins(u,c) == 1:
             win +=1
 
-        elif check_lost(u,c) == 1:
+        if check_lost(u,c) == 1:
             lost +=1
 
     print()
