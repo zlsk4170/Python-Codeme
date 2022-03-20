@@ -50,7 +50,7 @@ def show_you_lost(random_word_local):
     return message_lost
 
 
-def game_engine(max_rounds_local,random_word_local,hidden_word_local,show_you_won,show_you_lost):
+def game_engine(max_rounds_local,random_word_local,hidden_word_local,show_you_won_local,show_you_lost_local):
 
     round = 1
     while round <= max_rounds_local:
@@ -59,7 +59,7 @@ def game_engine(max_rounds_local,random_word_local,hidden_word_local,show_you_wo
         input_letter = input_letter.upper()
 
         if input_letter == random_word_local:
-            print(show_you_won)
+            print(show_you_won_local)
             break
 
         if input_letter in random_word_local:
@@ -70,14 +70,14 @@ def game_engine(max_rounds_local,random_word_local,hidden_word_local,show_you_wo
             print(str)
 
             if str == random_word_local:
-                print(show_you_won)
+                print(show_you_won_local)
                 break
         else:
             str = ''.join(hidden_word_local)
             print(str)
         round += 1
     else:
-        print(show_you_lost)
+        print(show_you_lost_local)
 
 
 random_word = give_random_word()
