@@ -79,10 +79,12 @@ def game_engine(max_rounds_local,random_word_local,hidden_word_local,show_you_wo
     else:
         print(show_you_lost_local)
 
+def run_game():
+    random_word = give_random_word()
+    hidden_word = hide_random_word(random_word)
+    max_rounds = give_nb_of_rounds()
+    message_you_won = show_you_won()
+    message_you_lost = show_you_lost(random_word)
+    game_engine(max_rounds,random_word,hidden_word,message_you_won,message_you_lost)
 
-random_word = give_random_word()
-hidden_word = hide_random_word(random_word)
-max_rounds = give_nb_of_rounds()
-show_you_won = show_you_won()
-show_you_lost = show_you_lost(random_word)
-game_engine(max_rounds,random_word,hidden_word,show_you_won,show_you_lost)
+run_game()
