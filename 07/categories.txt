@@ -1,0 +1,3 @@
+animals:dog,cat,python,rhinoceros,dolphin
+fruits:apple,pear,ananas,banana,strawberry
+cars:ford,audi,mercedes,hyundai,volvo
