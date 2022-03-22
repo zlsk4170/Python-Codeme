@@ -112,7 +112,7 @@ def game_engine(max_rounds_local,random_word_local,hidden_word_local,show_you_wo
         print(show_you_lost_local)
 
 def main():
-    """This function stats the game"""
+    """This function starts the game"""
     content_list = get_list()
     content_category = get_categories(content_list)
     select_category = user_category(content_category)
