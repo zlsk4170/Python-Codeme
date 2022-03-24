@@ -1,6 +1,10 @@
+# Stwórz moduł, który przechowuje wzór na deltę.
+# Skorzystaj z wbudowanego modułu math.
+# W nowym pliku wykorzystaj moduł.
+
 import moduly_delta as delta
 
-def give_delta():
+def main():
 
     b = float(input('Give "b" value: '))
     a = float(input('Give "a" value: '))
@@ -9,4 +13,7 @@ def give_delta():
     delta_value = delta.calculate_delta(b,a,c)
     return print(f'Delta is equal: ',round(delta_value,2))
 
-give_delta()
+main()
+
+if __name__ == '__main__':
+    main()
