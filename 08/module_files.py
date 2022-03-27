@@ -10,7 +10,7 @@ def check_file():
                 return path, True
             else:
                 print(f'Oto zawartość pliku:\n',file.read())
-                print(f'Plik niepusty chroniony jest przed zapisem')
+                print(f'Plik niepusty jest chroniony przed zapisem')
     except FileNotFoundError:
         print('Nazwa pliku nieprawidłowa')
 
