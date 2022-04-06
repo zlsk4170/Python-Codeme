@@ -277,6 +277,7 @@ def load_results():
         line2 = file.readline().strip('\n').replace('\'','\"')
         js1 = json.loads(line1)
         js2 = json.loads(line2)
+        print('Results loaded from the file')
         return js1["VEGETABLES"], js1["MEAT"], js2["MONEY"], js2["SATISFACTION"], js2["GRADE"]
 
 def save_results(products,results):
