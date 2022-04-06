@@ -34,7 +34,6 @@ class Player():
                     return 2
                 elif user_choice == 3:
                     return 3
-                    # cook(user_name)
                 elif user_choice == 4:
                     return 4
                 elif user_choice == 5:
@@ -130,7 +129,7 @@ class Player():
                     return 2,10,40,'MEAT',5
                 elif user_choice == 0:
                     print('Return to the previous menu:')
-                    return 0,0,0,0
+                    return 0,0,0,0,0
                 else:
                     raise ValueError
             except ValueError:
