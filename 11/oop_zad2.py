@@ -22,6 +22,7 @@ class Storczyki():
         return self.colour
 
 storczyk1 = Storczyki('grey','June','king size')
+storczyk2 = Storczyki('red','June','king size')
 print(storczyk1.update_colour())
-print(storczyk1.show())
+print(storczyk2.show())
 print(storczyk1.type)
