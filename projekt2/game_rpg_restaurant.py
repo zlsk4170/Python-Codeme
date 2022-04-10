@@ -219,19 +219,19 @@ class Player():
         print('****************************************************************')
         if products['VEGETABLES'] <= 0 or products['MEAT'] <=0:
             print(f'Your cook {name} used all products!')
-            print('GAME OVER')
+            print('Game ended. What would you like to do next?')
             return
         if results['MONEY'] <= 0:
             print(f'Your cook {name} have no money left!')
-            print('GAME OVER')
+            print('Game ended. What would you like to do next?')
             return
         if results['SATISFACTION'] <= 0:
             print(f'Your cook {name} dissapointed your boss!')
-            print('GAME OVER')
+            print('Game ended. What would you like to do next?')
             return
         if results['GRADE'] <= 0:
             print(f'Your cook {name} ruined restaurant reputation!')
-            print('GAME OVER')
+            print('Game ended. What would you like to do next?')
             return
         while True:
             try:
@@ -263,7 +263,7 @@ def main_menu():
             if user_choice == 2:
                 return 2
             elif user_choice == 0:
-                print('GAME OVER')
+                print('Bye bye')
                 return 0
             else:
                 raise ValueError
@@ -315,6 +315,8 @@ def algorythm(results,products):
                             cook.buy_product(farm,amount,cost,product_name,satisfaction_value)
                         if farm == 0:
                             break
+                    if do_shop == 0:
+                        break
                 if show_prod == 0:
                     break
         if action == 2:
