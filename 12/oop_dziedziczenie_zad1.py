@@ -11,11 +11,13 @@ class Animals():
     def desc(self):
         print('Zwierzęta to nie ludzie')
 
+    def message(self):
+        print('To jest komunikat z klasy Animals')
+
 class Mammals(Animals):
     def __init__(self):
         print('Jestem ssakiem')
     def desc(self):
-        super().desc()
         print('Ssaki należą do zwierząt')
 
 class Cat(Mammals):
@@ -34,16 +36,16 @@ class Dog(Mammals):
 
 class Human(Mammals):
     def __init__(self):
-        super().__init__()
         print('Jestem czlowiekiem')
 
     def desc(self):
-        super().desc()
         print('Człowiek to ssak')
 
 
 jan = Human()
-# reksio = Dog()
-# bonifacy = Cat()
+reksio = Dog()
+bonifacy = Cat()
 
-print(jan.desc())
+jan.desc()
+jan.message()
+reksio.message()
