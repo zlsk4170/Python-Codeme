@@ -70,7 +70,7 @@ class Netbox():
     def display_menu_patch(self):
         print(colored('Objects are updated based on the id files stored in the folder [data_models].','blue'))
         print(colored('Use existing object id files or create your own file before executing the PATCH request.','blue'))
-        print(colored('file name example: regions_id.json','blue'))
+        print(colored('file name example: aa.json','blue'))
         print(colored('\nSelect Netbox object to update:','blue'))
         user_choice,param = define_alias()
         return user_choice, param
@@ -79,7 +79,7 @@ class Netbox():
     def display_menu_delete(self):
         print(colored('Objects are deleted based on the id files stored in the folder [data_models].','blue'))
         print(colored('Use existing object id files or create your own file before executing the DELETE request.','blue'))
-        print(colored('file name example: regions_id.json','blue'))
+        print(colored('file name example: aa.json','blue'))
         print(colored('\nSelect Netbox object to delete:','blue'))
         user_choice,param = define_alias()
         return user_choice, param
