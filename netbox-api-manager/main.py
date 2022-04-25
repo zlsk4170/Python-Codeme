@@ -4,8 +4,8 @@ import requests
 import json
 import ui
 from termcolor import colored
-from modules.authentication import credentials
-from modules.alias_selector import define_alias
+from mods import credentials
+from mods import define_alias
 
 
 class Netbox():
