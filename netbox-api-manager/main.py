@@ -3,6 +3,7 @@ import sys
 import requests
 import json
 import ui
+import urllib3
 from termcolor import colored
 from mods import credentials
 from mods import define_alias
@@ -203,6 +204,7 @@ class Netbox():
 
 
 def main():
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     print(colored('\nThis programs allows to send API requests to Netbox IPAM and DCIM','blue'))
     nb = Netbox()
     try:
