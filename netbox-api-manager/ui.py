@@ -114,15 +114,15 @@ def show_results(selection,results):
             except Exception:
                 cable = "null"
 
-                print(space.format(
-                    id,
-                    dev_name,
-                    int_name,
-                    int_type,
-                    peer_dev,
-                    peer_port,
-                    cable
-                ))
+            print(space.format(
+                id,
+                dev_name,
+                int_name,
+                int_type,
+                peer_dev,
+                peer_port,
+                cable
+            ))
 
     elif selection == '/dcim/locations/':
         space = "{:<10}{:<15}{:<30}{:<15}"
@@ -197,6 +197,7 @@ def show_results(selection,results):
                 name = key["name"]
             except Exception:
                 name = "null"
+
             print(space.format(
                 id,
                 name
