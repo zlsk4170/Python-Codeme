@@ -1,9 +1,10 @@
 import requests
 import json
-import ui
+import webbrowser
 from termcolor import colored
 from mods import credentials
 from mods import define_alias
+from mods import ui
 
 class Netbox():
 

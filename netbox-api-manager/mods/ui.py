@@ -1,11 +1,3 @@
-def chech_if_null(value):
-    try:
-        value
-    except Exception:
-        value = "null"
-    return value
-
-
 def show_results(selection,results):
 
     if selection == '/dcim/cables/':
