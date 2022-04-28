@@ -1,3 +1,11 @@
+def chech_if_null(value):
+    try:
+        value
+    except Exception:
+        value = "null"
+    return value
+
+
 def show_results(selection,results):
 
     if selection == '/dcim/cables/':
@@ -208,6 +216,7 @@ def show_results(selection,results):
 
         space = "{:<5}{:<15}{:<15}{:<15}{:<20}{:<35}{:<15}"
         headers = "ID", "Site Name", "Region", "Group", "Device Count", "Description", "Status"
+
         print(space.format(*headers))
 
         for key in results:
@@ -249,3 +258,5 @@ def show_results(selection,results):
                 description,
                 status
             ))
+
+
